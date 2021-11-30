@@ -1,0 +1,31 @@
+$topbarHeight: 30px;
+
+.topbar {
+    height: $topbarHeight;
+    background-color: $primaryDarkBlueColor;
+}
+
+.topbar--overlay {
+    position: absolute;
+    width: 100%;
+    background: rgba(38, 38, 41, 0.3);
+    z-index: 10;
+}
+
+.topbar__menu {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topbar__menu-item {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.topbar__menu-item:not(:last-child) {
+    margin-right: 35px;
+}

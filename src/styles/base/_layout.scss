@@ -1,0 +1,10 @@
+$containerMaxWidth: 1280px;
+$paddingWidth: 160px;
+  
+.container {
+    box-sizing: border-box;
+    max-width: $containerMaxWidth;
+    width: calc(100% - $paddingWidth * 2);
+    margin: 0 auto;
+}
+  

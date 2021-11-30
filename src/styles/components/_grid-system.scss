@@ -1,22 +1,23 @@
+$gridSize: 12;
+$gridColumnGap: 24px;
+
 .grid {
     display: grid;
-    --grid-size: 12;
-    --grid-column-gap: 24px;
-    grid-template-columns: repeat(var(--grid-size), 1fr);
-    grid-column-gap: var(--grid-column-gap);
+    grid-template-columns: repeat($gridSize, 1fr);
+    grid-column-gap: $gridColumnGap;
 }
 
-.grid--1col { --grid-size: 1; }
-.grid--2col { --grid-size: 2; }
-.grid--3col { --grid-size: 3; }
-.grid--4col { --grid-size: 4; }
-.grid--5col { --grid-size: 5; }
-.grid--6col { --grid-size: 6; }
-.grid--7col { --grid-size: 7; }
-.grid--8col { --grid-size: 8; }
-.grid--9col { --grid-size: 9; }
-.grid--10col { --grid-size: 10; }
-.grid--11col { --grid-size: 11; }
+.grid--1col { $gridSize: 1; }
+.grid--2col { $gridSize: 2; }
+.grid--3col { $gridSize: 3; }
+.grid--4col { $gridSize: 4; }
+.grid--5col { $gridSize: 5; }
+.grid--6col { $gridSize: 6; }
+.grid--7col { $gridSize: 7; }
+.grid--8col { $gridSize: 8; }
+.grid--9col { $gridSize: 9; }
+.grid--10col { $gridSize: 10; }
+.grid--11col { $gridSize: 11; }
 
 /*
     ==== FOR DEBUG ONLY ====
@@ -55,7 +56,7 @@
     .grid--10col,
     .grid--11col,
     .grid--12col {
-        --grid-size: 12;
+        $gridSize: 12;
     }
     
 
@@ -71,7 +72,7 @@
     .grid__col--span10,
     .grid__col--span11,
     .grid__col--span12 {
-        grid-column-end: span var(--grid-size);
+        grid-column-end: span $gridSize;
     }
 }
 

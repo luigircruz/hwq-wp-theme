@@ -1,3 +1,5 @@
+$buttonSpacing: 10px;
+
 .btn {
   display: inline-flex;
   box-sizing: border-box;
@@ -7,7 +9,7 @@
   padding: 0 10px;
   min-width: 149px;
 
-  background-color: var(--primary-yellow-color);
+  background-color: $primaryZestyOrangeColor;
   border: none;
   border-radius: 4px;
 
@@ -21,7 +23,7 @@
 }
 
 .btn:hover {
-  background-color: var(--primary-dark-grey-color);
+  background-color: $primaryDarkBlueColor;
   color: white;
 }
 
@@ -46,8 +48,6 @@
 }
 
 .btn-group {
-  --button-spacing: 10px;
-
   display: flex;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .btn-group > .btn:not(:last-child) {
-  margin-right: var(--button-spacing);
+  margin-right: $buttonSpacing;
 }
 
 .btn__icon {

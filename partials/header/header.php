@@ -1,5 +1,13 @@
 <?php
 get_template_part('partials/header/header', 'minimal');
+get_template_part('partials/topbar/topbar');
+
+$classes = array();
+if(array_key_exists('class', $args)) {
+  $classed = array_merge($classes, $args['class']);
+}
+$is_overlay = get_field('overlay_header_over_content');
+if($is_overlay) $classes[] = 'header--overlay';
 ?>
 <header class="header">
   <div class="header__container container">
