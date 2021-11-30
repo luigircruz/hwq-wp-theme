@@ -1,0 +1,26 @@
+version: '3.2'
+services:
+  web:
+      container_name: evolut_wordpress
+      image: wordpress
+      links:
+       - mysql
+      environment:
+       - WORDPRESS_DB_NAME=evolut_starter
+       - WORDPRESS_DB_USER=root
+       - WORDPRESS_DB_PASSWORD=YgcZPhxBfF69NZrZ7gCD
+      ports:
+       - "8080:80"
+      working_dir: /var/www/html
+      volumes:
+        - type: bind
+          source: ./
+          target: /var/www/html/wp-content/themes/evolut-starter
+  mysql:
+      container_name: evolut_starter_mysql
+      image: mysql:5.7
+      ports:
+       - "3306:3306"
+      environment:
+       - MYSQL_ROOT_PASSWORD=YgcZPhxBfF69NZrZ7gCD
+       - MYSQL_DATABASE=evolut_starter

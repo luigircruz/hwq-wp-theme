@@ -1,0 +1,31 @@
+.text-with-image {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.text-with-image + .text-with-image {
+  margin-top: 0;
+}
+
+.text-with-image__title {
+  margin-bottom: 80px;
+  color: var(--primary-dark-grey-color);
+}
+
+.text-with-image__sub-title {
+  margin-bottom: 20px;
+}
+
+.text-with-image__text {
+  letter-spacing: -0.002em;
+  color: #666;
+  column-gap: 56px;
+}
+
+.text-with-image__btn {
+  margin-top: 30px;
+}
+
+.text-with-image__image {
+  width: 100%;
+}
