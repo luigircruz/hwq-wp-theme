@@ -27,7 +27,7 @@ function render_menu($menu_name, $base_class='nav-menu', $separator='__') {
     $active = ( (stripos($item->url, $_SERVER['SERVER_NAME']) !== false) && $_SERVER['REQUEST_URI'] == parse_url( $item->url, PHP_URL_PATH  )  ) ? $base_class . $separator . 'item--active' : '';
     $target = !empty($item->target) ? ' target="'.$item->target.'"' : '';
 
-    echo sprintf("<a href='%s' class='" . $base_class . $separator . "item %s %s'%s>%s</a>", $href, $active, join(' ', $item->classes), $target, $title);
+    echo sprintf("<li class='main-nav__item'><a href='%s' class='" . $base_class . $separator . "item %s %s'%s>%s</a>", $href, $active, join(' ', $item->classes), $target, $title)."</li>";
   }
 
 }

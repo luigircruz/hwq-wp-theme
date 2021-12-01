@@ -1,7 +1,7 @@
 <?php
 define('EVOLUT_THEME_SLUG', 'hwq-theme');
 define('EVOLUT_THEME_TEXT_DOMAIN', EVOLUT_THEME_SLUG);
-define('EVOLUT_THEME_VERSION' , '0.1.0');
+define('EVOLUT_THEME_VERSION' , '0.1.3');
 define('EVOLUT_DEV_ENVIRONMENT', true);
 
 require('includes/gutenberg-styles.php');
