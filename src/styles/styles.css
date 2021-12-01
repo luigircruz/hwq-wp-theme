@@ -315,7 +315,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: auto;
 }
 
 .header__menu-item {
@@ -341,6 +340,16 @@ img {
   height: 6px;
   background: #009A84;
   margin-bottom: 74px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__hr {
+  display: block;
 }
 
 .footer__logo-row {
