@@ -1,0 +1,71 @@
+.newsletter__form {
+    width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: $grayColor;
+    padding: 2.5rem;
+    margin-top: 24px;
+}
+
+.newsletter__form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__heading {
+    color: $primaryDarkBlueColor;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.newsletter__form form > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.newsletter__field-email input,
+.newsletter__field-name input {
+    padding: 0.5rem 1rem;
+    width: 300px;
+}
+
+.newsletter__field-button input {
+    width: 150px;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: $primaryZestyOrangeColor;
+    cursor: pointer;
+}
+
+.newsletter__field-button input:hover {
+    background-color: #e8811a;
+}
+
+@media (max-width: 1024px) {
+    .newsletter__form form {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .newsletter__heading {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .newsletter__form form > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-top: calc(1rem * var(--tw-space-x-reverse));
+        margin-bottom: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    }
+
+    .newsletter__field input:not([type="submit"]) {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}

@@ -1,3 +1,23 @@
+<div class="newsletter__form">
+  <div class="container">
+    <form method="post" action="https://hwqrevamp.kinsta.cloud/?na=s">
+      
+      <h2 class="newsletter__heading">Newsletter Sign up</h2>
+      <input type="hidden" name="nlang" value="">
+      <div class="newsletter__field newsletter__field-name">
+        <input class="newsletter-name" type="text" name="nn" id="tnp-1" placeholder="Name" value="" required>
+      </div>
+
+      <div class="newsletter__field newsletter__field-email">
+        <input class="newsletter-email" type="email" name="ne" id="tnp-2" placeholder="Email" value="" required>
+      </div>
+      <div class="newsletter__field newsletter__field-button">
+        <input class="newsletter-submit" type="submit" value="Sign up" >
+      </div>
+    </form>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="footer__container">
     <div class="footer__upper-row">
@@ -16,7 +36,7 @@
       <div class="divider"></div>
       <nav class="footer__upper-col">
         <ul class="footer__upper-list footer__subscribe">
-            <?php render_menu('footer', 'footer__submenu-link', '-') ?>
+            <?php render_menu('footer-subscribe', 'footer__submenu-link', '-') ?>
         </ul>
       </nav>
       <div class="divider"></div>

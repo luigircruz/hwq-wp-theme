@@ -1,7 +1,7 @@
 <?php
 define('EVOLUT_THEME_SLUG', 'hwq-theme');
 define('EVOLUT_THEME_TEXT_DOMAIN', EVOLUT_THEME_SLUG);
-define('EVOLUT_THEME_VERSION' , '0.1.3');
+define('EVOLUT_THEME_VERSION' , '0.1.5');
 define('EVOLUT_DEV_ENVIRONMENT', true);
 
 require('includes/gutenberg-styles.php');
@@ -17,6 +17,8 @@ register_nav_menus(
     'primary' => __('Primary', EVOLUT_THEME_TEXT_DOMAIN),
     'topbar' => __('Top Bar', EVOLUT_THEME_TEXT_DOMAIN),
     'footer'  => __('Footer Menu', EVOLUT_THEME_TEXT_DOMAIN),
+    'footer-sub'  => __('Footer Sub Menu', EVOLUT_THEME_TEXT_DOMAIN),
+    'footer-subscribe'  => __('Footer Menu Subscribe', EVOLUT_THEME_TEXT_DOMAIN),
   )
 );
 
